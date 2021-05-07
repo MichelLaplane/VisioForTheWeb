@@ -3,8 +3,9 @@
 ## Summary
 
 Visio for the web Sample solution.
-PlaceHolder function for adding your Visio JS Api command
-PlaceHolder function for adding your Visio JS Api Event management
+- PlaceHolder function for adding your Visio JS Api command.
+- ![VisioForTheWeb](https://user-images.githubusercontent.com/15141659/117474944-c829cf00-af5b-11eb-9073-8c4dfd735888.png)
+PlaceHolder function for adding your Visio JS Api Event management.
 
 [picture of the solution in action, if possible]
 
@@ -66,7 +67,7 @@ This extension illustrates the following concepts:
 - Usage of Visio JS Api
 - Provide Highlight function of a shape and event mouse management!
 
-[Uploading VisioForTheWeb.png…]()
+![VisioForTheWeb](https://user-images.githubusercontent.com/15141659/117474998-d7a91800-af5b-11eb-8b59-da17dee33fd6.png)
 
 
 > Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
