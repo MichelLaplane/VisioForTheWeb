@@ -2,7 +2,9 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+Visio for the web Sample solution.
+PlaceHolder function for adding your Visio JS Api command
+PlaceHolder function for adding your Visio JS Api Event management
 
 [picture of the solution in action, if possible]
 
@@ -12,14 +14,18 @@ Short summary on functionality and used technologies.
 
 ## Applies to
 
-- [SharePoint Framework](https://aka.ms/spfx)
+- [Visio JavaScript API overview](https://docs.microsoft.com/en-us/office/dev/add-ins/reference/overview/visio-javascript-reference-overview)
+ [SharePoint Framework](https://aka.ms/spfx)
 - [Microsoft 365 tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
 
 > Get your own free development tenant by subscribing to [Microsoft 365 developer program](http://aka.ms/o365devprogram)
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> Visual Studio Code
+> Node.js
+> Gulp
+> Yeoman
 
 ## Solution
 
@@ -31,8 +37,8 @@ folder name | Author details (name, company, twitter alias with link)
 
 Version|Date|Comments
 -------|----|--------
-1.1|March 10, 2021|Update comment
-1.0|January 29, 2021|Initial release
+0.5.1|May 7, 2021| cleaning and improve highlight feature
+0.5.0|May 6, 2021|Initial release
 
 ## Disclaimer
 
@@ -52,13 +58,16 @@ Version|Date|Comments
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
+This extension help to create a Visio for the web Web Part.
 
 This extension illustrates the following concepts:
 
-- topic 1
-- topic 2
-- topic 3
+- Creation of an SPFx Web Part
+- Usage of Visio JS Api
+- Provide Highlight function of a shape and event mouse management!
+
+[Uploading VisioForTheWeb.png…]()
+
 
 > Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
 
