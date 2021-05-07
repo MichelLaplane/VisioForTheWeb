@@ -31,7 +31,7 @@
 
 Solution|Author(s)
 --------|---------
-folder name | Author details (name, company, twitter alias with link)
+https://github.com/MichelLaplane/VisioForTheWeb | Michel Laplane - ShareVisual @MichelLAPLANE (name, company, twitter alias with link)
 
 ## Version history
 
