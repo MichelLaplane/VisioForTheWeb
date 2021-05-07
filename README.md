@@ -31,7 +31,7 @@
 
 Solution|Author(s)
 --------|---------
-https://github.com/MichelLaplane/VisioForTheWeb | Michel Laplane - ShareVisual @MichelLAPLANE (name, company, twitter alias with link)
+https://github.com/MichelLaplane/VisioForTheWeb | Michel Laplane - ShareVisual - Microsoft MVP (Office App & Services)
 
 ## Version history
 
@@ -66,12 +66,7 @@ This extension illustrates the following concepts:
 - Usage of Visio JS Api
 - Provide Highlight function of a shape and event mouse management!
 
-![VisioForTheWeb](https://user-images.githubusercontent.com/15141659/117474998-d7a91800-af5b-11eb-8b59-da17dee33fd6.png)
-
-
-> Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
-
-> Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
+http://aka.ms/m365pnp.
 
 ## References
 
