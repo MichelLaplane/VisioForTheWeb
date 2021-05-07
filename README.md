@@ -22,10 +22,10 @@
 
 ## Prerequisites
 
-> Visual Studio Code
-> Node.js
-> Gulp
-> Yeoman
+- Visual Studio Code
+- Node.js
+- Gulp
+- Yeoman
 
 ## Solution
 
