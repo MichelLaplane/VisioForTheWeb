@@ -31,10 +31,10 @@ export default class VisioForTheWeb extends React.Component<IVisioForTheWebProps
     if (this.props.visiofileurl && this.props.visiofileurl !== prevProps.visiofileurl) {
       this.props.visioForTheWebObject.load(this.props.visiofileurl);
     }
-    // if ((this.props.bHighLight !== prevProps.bHighLight) || (this.props.shapeName !== prevProps.shapeName)) {
-    //   this.props.visioForTheWebObject.highlightShape(this.props.shapeName, this.props.bHighLight);
-    // }
-    this.props.visioForTheWebObject.MyFunction();
+    if ((this.props.bHighLight !== prevProps.bHighLight) || (this.props.shapeName !== prevProps.shapeName)) {
+      this.props.visioForTheWebObject.highlightShape(this.props.shapeName, this.props.bHighLight);
+    }
+    // this.props.visioForTheWebObject.MyFunction();
   }
 
 

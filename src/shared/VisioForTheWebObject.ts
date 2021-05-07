@@ -60,25 +60,31 @@ export class VisioForTheWebObject {
   }
 
   // ========================================================
+  // PlaceHolder for adding API function
+  // ========================================================
+  public VisioJSApiFunction = async (): Promise<void> => {
+    try {
+      await Visio.run(this.visioEmbeddedSession, async (context: Visio.RequestContext) => {
+        // Add your Visio JS Api calls
+        await context.sync();
+      });
+    } catch (error) {
+      this.logError(error);
+    }
+  }
+
+  // ========================================================
   // Highlight a Shape
   // shapeName name of the shape to higlight
   // bHighlight higlight if true un-highlight if false
   // returns a promise
   // ========================================================
   public highlightShape = async (shapeName: string, bHighlight: boolean): Promise<void> => {
-    console.log("Start highlightShape : " + shapeName);
-
     try {
       await Visio.run(this.visioEmbeddedSession, async (context: Visio.RequestContext) => {
         const activePage: Visio.Page = context.document.getActivePage();
         const shapesCollection: Visio.ShapeCollection = activePage.shapes;
-        shapesCollection.load();
-        await context.sync();
-        console.log("shapesCollection.load");
         const shape: Visio.Shape = shapesCollection.getItem(shapeName);
-        shape.load();
-        await context.sync();
-        console.log("Shape founded : " + shape.name);
         if (bHighlight == true)
           shape.view.highlight = { color: "#FF0000", width: 2 };
         else
@@ -90,32 +96,7 @@ export class VisioForTheWebObject {
     }
   }
 
-  public MyFunction = async (): Promise<void> => {
-    try {
-      await Visio.run(this.visioEmbeddedSession, async (context: Visio.RequestContext) => {
-        var activePage = context.document.getActivePage();
-        var shape = activePage.shapes.getItem(1);
-        shape.view.highlight = {
-          color: "#FF0000",
-          width: 2
-        };
-        await context.sync();
-      });
-    } catch (error) {
-      this.logError(error);
-    }
-  }
 
-  public VisioJSApiFunction = async (): Promise<void> => {
-    try {
-      await Visio.run(this.visioEmbeddedSession, async (context: Visio.RequestContext) => {
-        // Add your Visio JS Api calls
-        await context.sync();
-      });
-    } catch (error) {
-      this.logError(error);
-    }
-  }
 
   // ========================================================
   // Add custom event handlers
@@ -137,13 +118,11 @@ export class VisioForTheWebObject {
   }
 
   // ========================================================
-  // ShapeMouseEnter event
-  // args
-  // returns a promise
-  // ========================================================
-  private onShapeMouseEnter = async (args: Visio.ShapeMouseEnterEventArgs): Promise<void> => {
+  // PlaceHolder for subscribing to Visio Js API Event
+  // ========================================================  
+  private VisioJSApiEvent = async (args: Visio.ShapeMouseEnterEventArgs): Promise<void> => {
     try {
-      console.log("onShapeMouseEnter");
+      console.log("Event fired");
     }
     catch (error) {
       this.logError(error);
@@ -152,12 +131,12 @@ export class VisioForTheWebObject {
 
   // ========================================================
   // ShapeMouseEnter event
-  // @param args
-  // @returns returns a promise
+  // args
+  // returns a promise
   // ========================================================
-  private VisioJSApiEvent = async (args: Visio.ShapeMouseEnterEventArgs): Promise<void> => {
+  private onShapeMouseEnter = async (args: Visio.ShapeMouseEnterEventArgs): Promise<void> => {
     try {
-      console.log("Event fired");
+      console.log("onShapeMouseEnter");
     }
     catch (error) {
       this.logError(error);
