@@ -76,4 +76,27 @@
         display: inline-block;
       }
     }    
+    .Center {
+      padding-top: 10px;
+        padding-bottom: 10px;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        border-right: 2px solid white;
+        padding-right: 13px;
+        padding-left: 13px;
+        border-bottom: 2px solid white;
+    
+        /*
+        position: relative;
+          padding-bottom: 0px;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          border-right: 2px solid white;
+          padding: 8px 13px 8px;
+          border-bottom: 2px solid white;
+          max-width: 132px;
+          word-break: break-word;*/
+    }    
 }

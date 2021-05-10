@@ -3,7 +3,11 @@ export class VisioForTheWebObject {
   private visioUrlDocument = "";
   private visioEmbeddedSession: OfficeExtension.EmbeddedSession = null;
   private fullFileUniqueId: string;
+  public enteredShapeName: string;
 
+  // delegate functions passed from the react component
+  public onShapeNameEntered: (enteredShapeName: string) => void;
+    
   // ========================================================
   // Get the sharePoint file Unique Id of the Visio file including the path
   //  docUrl url of the visio document (Copied from url address of the browser when viewing a Visio Document)
@@ -137,6 +141,8 @@ export class VisioForTheWebObject {
   private onShapeMouseEnter = async (args: Visio.ShapeMouseEnterEventArgs): Promise<void> => {
     try {
       console.log("onShapeMouseEnter");
+      this.enteredShapeName = args.shapeName;
+      this.onShapeNameEntered(this.enteredShapeName);
     }
     catch (error) {
       this.logError(error);
