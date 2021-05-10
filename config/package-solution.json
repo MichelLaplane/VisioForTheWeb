@@ -3,7 +3,7 @@
   "solution": {
     "name": "visio-for-the-web-client-side-solution",
     "id": "9bd27f04-fe59-482b-96c2-19b6f919cbfa",
-    "version": "0.5.1.0",
+    "version": "0.6.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
     "developer": {

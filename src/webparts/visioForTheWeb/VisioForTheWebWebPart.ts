@@ -15,7 +15,6 @@ import { IVisioForTheWebProps } from './components/IVisioForTheWebProps';
 
 export interface IVisioForTheWebWebPartProps {
   visiofileurl: string;
-  visioForTheWebObject: VisioForTheWebObject;
   shapeName: string;
   bHighLight: boolean;
 }
@@ -28,7 +27,6 @@ export default class VisioForTheWebWebPart extends BaseClientSideWebPart<IVisioF
   private shapeName: string;
 
   public onInit(): Promise<void> {
-      this.visioForTheWebObject = new VisioForTheWebObject();
     return super.onInit();
   }
 
@@ -37,7 +35,6 @@ export default class VisioForTheWebWebPart extends BaseClientSideWebPart<IVisioF
       VisioForTheWeb,
       {
         visiofileurl: this.properties.visiofileurl,
-        visioForTheWebObject: this.visioForTheWebObject,
         shapeName: this.properties.shapeName,
         bHighLight:this.properties.bHighLight
       }
@@ -75,7 +72,7 @@ export default class VisioForTheWebWebPart extends BaseClientSideWebPart<IVisioF
                 PropertyPaneTextField('shapeName', {
                   label: strings.ShapeNameLabel
                 }),
-                PropertyPaneButton('highlightShape', {
+                PropertyPaneButton('highlightShapeToggle', {
                   text: 'Highlight shape toggle',
                   buttonType: PropertyPaneButtonType.Primary,
                   onClick: this.HighlightToggleClick.bind(this)
