@@ -5,6 +5,7 @@
 ### Visio for the web Sample solution.
 
 ![VisioForTheWeb](https://user-images.githubusercontent.com/15141659/117474944-c829cf00-af5b-11eb-9073-8c4dfd735888.png)
+![VisioForTheWeb 060](https://user-images.githubusercontent.com/15141659/117693934-d592c380-b1be-11eb-8bb5-02c1fe5b04c7.png)
 - PlaceHolder function for adding your Visio JS Api command.
 - PlaceHolder function for adding your Visio JS Api Event management.
 
